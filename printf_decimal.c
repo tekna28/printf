@@ -19,7 +19,7 @@ int printf_decimal(va_list value)
 
 	if (last < 0)
 	{
-		_putchar('-')
+		_putchar('-');
 		number = -number;
 		n = -n;
 		last = -last;
@@ -43,6 +43,7 @@ int printf_decimal(va_list value)
 			i++;
 		}
 	}
+
 	_putchar(last + '0');
 	return (i);
 }
