@@ -21,8 +21,8 @@ int printf_string(va_list value);
  */
 typedef struct format
 {
-  char *id;
-  int (*f)();
+char *id;
+int (*f)();
 } convert;
 
 #endif
