@@ -20,7 +20,7 @@ int printf_string(va_list value)
 		len = _strlen(string);
 
 		for (i = 0; i < len; i++)
-		_putchar(string[i];
+		_putchar(string[i]);
 		return (len);
 	}
 	else
