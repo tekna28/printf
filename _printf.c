@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 {
 convert con[] = {
 {"%c", printf_char}, {"%s", printf_string}, {"%%", printf_percent},
-{"%i", printf_int}, {"%d", printf_decimal},
+{"%i", printf_int}, {"%d", printf_decimal}, {"%u", print_unsigned},
 {"%b", printf_binary}
 };
 

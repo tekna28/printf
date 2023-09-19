@@ -15,6 +15,7 @@ int printf_string(va_list value);
 int printf_decimal(va_list value);
 int printf_int(va_list value);
 int printf_binary(va_list value);
+int print_unsigned(va_list value);
 
 /**
  * struct format - for the conversion specifiers of printf.
