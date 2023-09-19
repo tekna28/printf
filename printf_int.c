@@ -21,8 +21,8 @@ int printf_int(va_list value)
 		_putchar('-');
 		number = -number;
 		n = -n;
-		last = -last
-		i++
+		last = -last;
+		i++;
 	}
 	if (number > 0)
 	{
@@ -42,4 +42,6 @@ int printf_int(va_list value)
 			i++;
 		}
 	}
+	_putchar(last + '0');
+        return (i);
 }
