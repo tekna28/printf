@@ -10,7 +10,8 @@
 int _printf(const char *format, ...)
 {
 convert con[] = {
-{"%c", printf_char}, {"%s", printf_string}, {"%%", printf_percent}
+{"%c", printf_char}, {"%s", printf_string}, {"%%", printf_percent},
+{"%i", printf_int}, {"%d", printf_decimal}
 };
 
 va_list ptr;
@@ -23,7 +24,7 @@ return (-1);
 This:
 while (format[i] != '\0')
 {
-j = 2;
+j = 4;
 while (j >= 0)
 {
 if (con[j].id[0] == format[i] && con[j].id[1] == format[i + 1])
