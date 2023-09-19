@@ -10,6 +10,8 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 int printf_char(va_list value);
 int printf_percent(void);
+int _strlen(char *s);
+int printf_string(va_list value);
 
 /**
  * struct format - for the conversion specifiers of printf.
@@ -21,6 +23,6 @@ typedef struct format
 {
   char *id;
   int (*f)();
-} format;
+} convert;
 
 #endif
