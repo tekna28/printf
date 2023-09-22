@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdarg.h>
+#include "main.h"
 
 /**
  * printf_binary - prints a binary number who
